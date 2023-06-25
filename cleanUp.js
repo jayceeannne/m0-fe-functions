@@ -8,23 +8,28 @@
 
 
 // EX 1:
-function askForName() { console.log("Hello, what is your name?") }
+function askForName() { 
+  console.log("Hello, what is your name?")
+}
+  askForName()
 
-askForName()
-
+//console.log needed to be on line 12 not on the same line as the function keyword and function name.
 
 // EX 2:
+var sum = ("first", "second", "third");
+
 function addThreeNums(first, second, third) {
-var sum = first + second + third
-return sum;
+  console.log(first + second + third);
       }
 
 addThreeNums(1, 2, 3);
 addThreeNums(4, 2, 7);
 
+// I removed the return sum. I also added console.log underneath the function keyword and moved the var sum out of the function. 
+//The variables needed to be a in a string with each variable in a set of quotations.
 
 // EX 3:
-func makeFreshPesto(){
+function makeFreshPesto(){
   console.log("Buy ingredients: basil, parmesan, romano, olive oil, pine nuts, garlic, salt, pepper");
   console.log("Pulse basil and pine nuts");
   console.log("Add garlic and cheeses");
@@ -33,12 +38,17 @@ func makeFreshPesto(){
 
 makeFreshPesto();
 
+//I typed out function.
 
 //  EX 4:
-function average(num1, num2) 
-  {
-var sum = num1 + num2;
-    var avg = sum / 2;
+var sum = ("num1", "num2");
+var avg = ("sum");
 
-return avg
+function average(num1, num2) {
+  console.log(num1 + num2)
+  console.log(sum / 2)
   }
+average(2, 6);
+
+  //The variable needed to be outside of the function. var sum = num1 + num2; was incorrect, it needed to bein a console.log not as a variable. 
+   //I put var avg = sum /2 in a console.log and removed return avg.
